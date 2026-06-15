@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Srot Das | Python Developer</title>
+
+    <style>
+      *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+--bg:#0f172a;
+--text:#ffffff;
+--card:rgba(255,255,255,.08);
+}
+
+.light{
+--bg:#f4f4f4;
+--text:#000000;
+--card:rgba(255,255,255,.6);
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+transition:.4s;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+header{
+position:fixed;
+width:100%;
+padding:20px 8%;
+backdrop-filter:blur(10px);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:var(--text);
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+padding:12px 25px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid #3b82f6;
+}
+
+section{
+padding:100px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+}
+
+.glass-card,
+.card,
+.project{
+background:var(--card);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:25px;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.skill-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+text-align:center;
+transition:.4s;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.project{
+transition:.4s;
+}
+
+.project img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.card:hover,
+.project:hover{
+transform:
+rotateX(5deg)
+rotateY(5deg)
+translateY(-10px);
+
+box-shadow:
+0 20px 40px rgba(59,130,246,.3);
+}
+
+.project a{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.socials{
+margin-top:20px;
+font-size:2rem;
+}
+
+.socials a{
+color:var(--text);
+margin:0 15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}  
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+    <nav>
+
+        <div class="logo">SROT DAS</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="themeToggle">🌙</button>
+
+    </nav>
+
+</header>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            <span id="typing"></span>
+        </h1>
+
+        <p>
+            Building modern software, automation tools,
+            AI applications and scalable web solutions.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="assets/resume.pdf" class="btn btn-outline">
+                Download CV
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="glass-card">
+
+        <p>
+            I am a Python Developer focused on
+            Desktop Applications,
+            AI Solutions,
+            Automation,
+            Database Systems,
+            and Modern Web Development.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skill-grid">
+
+        <div class="card">Python</div>
+        <div class="card">Tkinter</div>
+        <div class="card">Flask</div>
+        <div class="card">Django</div>
+        <div class="card">JavaScript</div>
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">MS Access</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project">
+
+            <img src="assets/project1.png" alt="">
+
+            <h3>Library Management System</h3>
+
+            <p>
+                Python + Tkinter + MS Access
+            </p>
+
+            <a href="https://github.com/yourusername/project1"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <img src="assets/project2.png" alt="">
+
+            <h3>Hand Gesture Mouse</h3>
+
+            <p>
+                OpenCV + MediaPipe
+            </p>
+
+            <a href="https://github.com/yourusername/project2"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <img src="assets/project3.png" alt="">
+
+            <h3>People Counting System</h3>
+
+            <p>
+                YOLO + Deep Learning
+            </p>
+
+            <a href="https://github.com/yourusername/project3"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="glass-card">
+
+        <p>Email: srot18code@gmail.com</p>
+
+        <div class="socials">
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Srot Das
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS("particles-js", {
+
+particles: {
+
+number: {
+value: 80
+},
+
+color: {
+value: "#3b82f6"
+},
+
+shape: {
+type: "circle"
+},
+
+opacity: {
+value: 0.5
+},
+
+size: {
+value: 3
+},
+
+move: {
+enable: true,
+speed: 2
+},
+
+line_linked: {
+enable: true,
+distance: 150,
+color: "#3b82f6",
+opacity: 0.4,
+width: 1
+}
+
+}
+
+});
+</script>
+
+<script>
+ const toggle =
+document.getElementById("themeToggle");
+
+toggle.addEventListener("click",()=>{
+
+document.body.classList.toggle("light");
+
+});
+
+const text =
+"Python Developer | AI Enthusiast | Freelancer";
+
+let index = 0;
+
+function typeEffect(){
+
+if(index < text.length){
+
+document.getElementById("typing").innerHTML +=
+text.charAt(index);
+
+index++;
+
+setTimeout(typeEffect,100);
+
+}
+
+}
+
+typeEffect();   
+</script>
+
+</body>
+</html>
